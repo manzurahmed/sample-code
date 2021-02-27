@@ -1,0 +1,25 @@
+/*
+Theme Name: adhunaarchi
+Theme URI: http://adhunaarchitects.com
+Author: Manzur Ahmed (01776297930)
+Author URI: https://webtechriser.com
+Description: Adhuna Architects
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: adhunaarchi
+Tags: custom-background, custom-logo, custom-menu, featured-images, blog, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+adhunaarchi is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* Load Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400");

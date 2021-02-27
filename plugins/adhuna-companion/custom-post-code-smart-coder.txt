@@ -1,0 +1,39 @@
+
+
+	/**
+	 * Register meta box(es) for "projects" CPT
+	 */
+	/*
+	function adhunaa_register_meta_boxes() {
+		// add_meta_box( $id, $title, callable $callback, 
+		// string|array|WP_Screen $screen, $context = 'advanced', $priority = 'default', array $callback_args = null
+		// )
+		add_meta_box( 'architect_1', __( 'Architect Name 1', 'adhunaarchi' ), 'adhunaa_architect_1_callback',
+			'projects',
+			'advanced',
+			'high' );
+	}
+	add_action( 'add_meta_boxes', 'adhunaa_register_meta_boxes' );
+
+	function adhunaa_architect_1_callback( $post ) {
+		$architect_1_name = get_post_meta( $post->ID, 'architect_1', true );
+		$architect_2_name = get_post_meta( $post->ID, 'architect_2', true );
+	?>
+		<label for="architect_1"><?php echo __("Architect's Name 1", "adhunaarchi"); ?> </label>
+		<input type="text" name="architect_1" value="<?php echo esc_attr($architect_1_name); ?>">
+		<br />
+		<label for="architect_2"><?php echo __("Architect's Name 2", "adhunaarchi"); ?> </label>
+		<input type="text" name="architect_2" value="<?php echo esc_attr($architect_2_name); ?>">
+	<?php
+	}
+
+	// This function will save the data of CPT
+	function adhunaarchi_cpt_data_save( $post_id, $post ) {
+		$architect_1_name = $_POST['architect_1'];
+		$architect_2_name = $_POST['architect_2'];
+		//
+		update_post_meta( $post_id, 'architect_1', $architect_1_name );
+		update_post_meta( $post_id, 'architect_2', $architect_2_name );
+	}
+	add_action( 'save_post', 'adhunaarchi_cpt_data_save', 10, 2 );
+	*/

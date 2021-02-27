@@ -1,0 +1,286 @@
+/* *************************************** RESPONSIVE *************************************** */
+/* Medium layout: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /*	.header-right-btn a, .header-right-btn span {
+		padding: 10px 12px;
+  }*/
+  .services-box h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet & Mobile Layout: 768px */
+@media only screen and (max-width: 991px) {
+  .header-top-area {
+    display: none;
+  }
+  .top-area {
+    height: auto;
+  }
+  .header-bottom-area {
+    height: auto;
+  }
+  .mainmenu {
+    margin-top: 5px;
+    display: none;
+  }
+
+  .responsive-menu-wrap {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    z-index: 4;
+  }
+
+  /* Slick Nav Starts */
+  .slicknav_menu {
+    background: #cadd63;
+    padding: 0;
+
+    .slicknav_menutxt {
+      display: none;
+    }
+    .slicknav_icon-bar {
+      background-color: $white;
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+
+  a.slicknav_btn {
+    padding: 0;
+    background: none;
+    margin: 0 0 21px;
+  }
+
+  .slicknav_nav {
+    width: calc(100vw - 30px);
+    background-color: #333;
+
+    li {
+      display: block;
+    }
+
+    .slicknav_row,
+    a {
+      color: #fff;
+      padding: 10px;
+      margin: 0;
+      display: block;
+
+      &:hover {
+        border-radius: 0;
+        background: #55c738;
+        color: #fff;
+      }
+    }
+  }
+  /* Slide Nav Ends */
+
+  .category-blog-img-featured {
+    min-height: 270px;
+  }
+
+  /* ************ CONTENT AREA */
+  .entry-content .alignleft {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin: 30px 0;
+
+    a img {
+      display: block;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+
+  /* We work differely */
+  .wework.wework-bg:after {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  .tab-list li a {
+    padding: 10px 20px;
+  }
+}
+/* screen and (max-width: 991px) */
+
+/* Tablet Layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mainmenu {
+    margin-top: 5px;
+    display: block;
+  }
+  /* Tablet Wide */
+  .responsive-menu-wrap {
+    display: none;
+  }
+
+  /* Slick Nav Starts */
+  .slicknav_menu {
+    background: none;
+    padding: 0;
+
+    .slicknav_menutxt {
+      display: none;
+    }
+    .slicknav_icon-bar {
+      background-color: $white;
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+
+  a.slicknav_btn {
+    padding: 0;
+    background: none;
+    margin: 0 0 21px;
+  }
+
+  .slicknav_nav {
+    width: calc(100vw - 30px);
+    background-color: #333;
+
+    li {
+      display: block;
+    }
+
+    .slicknav_row,
+    a {
+      color: #fff;
+      padding: 10px;
+      margin: 0;
+      display: block;
+
+      &:hover {
+        border-radius: 0;
+        background: #55c738;
+        color: #fff;
+      }
+    }
+
+    .current-menu-item a {
+      background: #55c738;
+    }
+  }
+  /* Slide Nav Ends */
+
+  .featured-title {
+    height: 70px;
+  }
+
+  /* Footer */
+  .footer-top-area ul li {
+    display: block;
+    text-align: center;
+
+    a {
+      margin-right: 0;
+    }
+  }
+
+  /* We work differely */
+  .tab-list li a {
+    padding: 10px 15px;
+  }
+}
+
+/* Mobile Layout: 320px */
+@media (max-width: 767px) {
+  /* Slick Nav Starts */
+  .slicknav_menu {
+    background: none;
+    padding: 0;
+
+    .slicknav_menutxt {
+      display: none;
+    }
+    .slicknav_icon-bar {
+      background-color: $white;
+      box-shadow: 0 0 0 transparent;
+    }
+  }
+
+  a.slicknav_btn {
+    padding: 0;
+    background: none;
+    margin: 0 0 21px;
+  }
+
+  .slicknav_nav {
+    width: calc(100vw - 30px);
+    background-color: #333;
+
+    li {
+      display: block;
+    }
+
+    .slicknav_row,
+    a {
+      color: #fff;
+      padding: 10px;
+      margin: 0;
+      display: block;
+
+      &:hover {
+        border-radius: 0;
+        background: #7ab6e3;
+        color: #222;
+      }
+    }
+
+    .current-menu-item a {
+      background: #7ab6e3;
+    }
+  }
+  /* Slide Nav Ends */
+
+  /* Hero image */
+  .homepage-hero {
+    height: 450px;
+
+    h1 {
+      font-size: 2.3rem;
+    }
+  }
+
+  .single-service-box {
+    height: 270px;
+  }
+
+  .quote {
+    padding: 50px 0;
+  }
+
+  .number-box-container {
+    height: auto;
+  }
+
+  .projects {
+    padding: 50px 0;
+  }
+
+  /* Footer */
+  .footer-top-area ul li {
+    display: block;
+    text-align: center;
+
+    a {
+      margin-right: 0;
+    }
+  }
+
+  /* We work differely */
+  .wework.wework-bg:after {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
+/* max-width: 767px */
+
+/* Wide Mobile Layout: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

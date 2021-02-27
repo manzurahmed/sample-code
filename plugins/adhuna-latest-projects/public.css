@@ -1,0 +1,85 @@
+.adhuna-latest-projects.widget {
+  margin-bottom: 0;
+}
+.single-project-box {
+  box-sizing: border-box;
+  display: flex;
+  height: 600px;
+  flex-basis: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.3s;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.single-project-box:hover {
+  background-size: 110%;
+}
+.project-title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 120%;
+  font-weight: 500;
+  z-index: 1;
+}
+.project-title:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  background: #7ab6e3;
+  left: 50%;
+  height: 100%;
+  right: 50%;
+  top: 0;
+  z-index: -1;
+}
+.single-project-box:hover .project-title:after {
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.project-title a {
+  color: #fff;
+}
+/* Read More + */
+.read-more {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+  opacity: 0.5;
+  transition: 0.5s;
+  display: none;
+  visibility: hidden;
+}
+.read-more .fa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 40px;
+}
+.single-project-box:hover .read-more {
+  display: block;
+  visibility: visible;
+}
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+  .single-project-box {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .adhuna-latest-projects {
+    display: flex;
+  }
+}

@@ -1,0 +1,43 @@
+@mixin headingHoriRule {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  content: "";
+  background-color: $linkColor;
+  z-index: 2;
+}
+@mixin headingHoriRule1($ruleColor, $ruleHeight, $width, $bottom) {
+  position: absolute;
+  bottom: $bottom;
+  left: 0;
+  width: $width;
+  height: $ruleHeight;
+  content: "";
+  background-color: $ruleColor;
+}
+
+@mixin divOverlayAfter($color, $opacityAfter, $zindex) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: $color;
+  opacity: $opacityAfter;
+  transition: 0.3s all;
+
+  @if $zindex != "" {
+    z-index: $zindex;
+  }
+}
+
+@mixin boxOverlayHover1($hoverColor, $hoverPercent) {
+  background-color: darken($hoverColor, $hoverPercent);
+}
+
+@mixin borderHoverColor1($color) {
+  border-color: $color;
+}

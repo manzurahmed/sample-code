@@ -1,0 +1,82 @@
+/* FORMS */
+input[type="submit"] {
+	background-color: #666;
+	border: none;
+	color: #fff;
+	padding: 8px 25px;
+	
+	&:hover {
+		background-color: #333;
+	}
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+	border: 1px solid #f4f4f4;
+	padding: 8px;
+	max-width: 100%;
+	font-weight: 400;
+	background-color: #f4f4f4;
+	text-align: left;
+}
+
+/* SHORTCODES */
+.inline-quote {
+	font-size: 120%;
+	width: 300px;
+	float: right;
+	height: auto;
+	background-color: #ffeee9;
+	margin: 50px 0 50px 30px;
+	padding: 80px 30px 30px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+	
+	&::after {
+		background-position: center;
+		background-size: cover;
+		width: 83px;
+		height: 83px;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		content: "";
+		transform: translate(-50%,-50%);
+	}
+}
+
+.hbw-read-also {
+	background-color: #FFE590; border-left: 4px solid #a91901; border-radius: 5px; padding: 10px; margin-top: 30px;
+	
+	h5 { font-size: 16px; font-weight: 700; margin: 0 0 30px !important; }
+	img { margin-right: 15px; float: left; }
+	a { font-size: 120%; }
+}
+
+/* ******************* RESPONSIVE QUERIES ******************* */
+/* Medium layout: 1280px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet & Mobile Layout: 768px */
+@media only screen and (max-width: 991px) {
+	.inline-quote {
+		width: 100%;
+		margin: 60px 0 30px 0;
+		padding: 80px 10px 30px;
+	}
+}
+
+/* Tablet Layout: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	//
+}
+
+/* Mobile Layout: 320px */
+@media only screen and (max-width: 767px) {
+	//
+}
+
+
+/* Wide Mobile Layout: 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}

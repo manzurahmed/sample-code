@@ -247,7 +247,7 @@ function adhunaarchi_scripts() {
 	wp_enqueue_script( 'gmap3', get_theme_file_uri('/assets/js/gmap3.min.js'), array('jquery'), '7.2.0', true );
     wp_enqueue_script( 'gmap', get_theme_file_uri('/assets/js/map.js'), array(), '1.0.0', true );
     // Google Map
-	wp_enqueue_script( 'google-api', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBBWsJ5xbR44-O3-FSIYJWdSsVuArg1CWs&callback=myMap", array(), null, true );
+	wp_enqueue_script( 'google-api', "", array(), null, true );
     endif;
 
 	// Load Main JS
